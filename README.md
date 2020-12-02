@@ -33,3 +33,8 @@ Usage of ./out/configmap-reload:
 
 This project is [Apache Licensed](LICENSE.txt)
 
+
+### Build New Image
+
+Run make to build the project and generate the binary. And then run `docker build` to actually build the
+image, this will use the binary that we already built.
