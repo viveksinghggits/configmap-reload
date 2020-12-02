@@ -11,6 +11,8 @@ COPY out/$BINARY /configmap-reload
 LABEL name="configmap-reload" \
     version="0.4.0" \
     release="6" \
-    vendor="github.com/jimmidyson/configmap-reload"
+    vendor="github.com/jimmidyson/configmap-reload" \
+    summary="Binary to trigger a reload when Kubernetes ConfigMaps are updated" \
+    description="configmap-reload is a simple binary to trigger a reload when Kubernetes ConfigMaps are updated."
 
 ENTRYPOINT ["/configmap-reload"]
